@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page à corriger</title>
+</head>
+<body>
+  <!-- Défaut 1 : doctype manquant, ajouté en première ligne. -->
+  <!-- Défaut 2 : attribut lang manquant sur <html>, ajouté lang="fr" pour les lecteurs d'écran et les moteurs de recherche. -->
+  <!-- Défaut 3 : meta charset doit être le premier élément du head, il était après le title. -->
+  <p>Bienvenue au <strong>club de code.</strong></p>
+  <!-- Défaut 4 : <strong> et <p> étaient mal imbriqués (</p></strong>), les balises doivent se fermer dans l'ordre inverse de leur ouverture. -->
+  <p>Nos ateliers ont lieu le mercredi de 14 h à 17 h.</p>
+  <!-- Défaut 5 : le <hr> était dans un paragraphe, ce qui n'est pas valide, et le <p> n'était pas fermé. -->
+  <hr>
+  <p id="info">Salle B12</p>
+  <p id="info-niveaux">Ouverts à tous les niveaux</p>
+  <!-- Défaut 6 : l'id "info" était utilisé deux fois, or un id doit être unique. -->
+  <p title="horaires du club">Entrée libre</p>
+  <!-- Défaut 7 : la valeur de l'attribut title n'avait pas de guillemets. -->
+  <p>Contact : club@tek-up.tn<br>Tél. : 70 000 000</p>
+  <p>Texte ajouté avant la fin du document</p>
+  <!-- Le texte après </html> a été déplacé dans le body, car rien ne doit suivre la balise fermante. -->
+</body>
+</html>
